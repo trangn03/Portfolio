@@ -1,0 +1,30 @@
+.container {
+  color: #4d4949;
+  padding: 1rem;
+  text-align: center;
+  font-size: 0.9rem;
+  border-top: 1px solid #578beb;
+  margin-top: 2rem;
+}
+
+.container p {
+  margin: 0.5rem 0;
+}
+
+.container strong {
+  color: #578beb;
+  font-weight: bold;
+}
+
+.backToTop {
+  font-family: 'Roboto Mono', monospace;
+  margin-top: 1rem;
+  background-color:  #4d4949;;
+  color: #ffff;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
