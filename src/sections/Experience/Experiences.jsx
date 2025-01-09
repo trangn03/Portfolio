@@ -4,6 +4,15 @@ import styles from './ExperiencesStyles.module.css';
 function Experiences() {
   const experiences = [
     {
+      role: 'Mathematics Data Annotator',
+      company: 'Highbrow Techonology Inc',
+      duration: 'Nov 2024 - Present',
+      details: [
+        'Performed multimodal data annotation for AI training and evaluation, accurately labeling images and text following specific guidelines to enahnce machine learning model accuracy.',
+        'Executed quality assurance by reviewing annotations to ensure consistency and correctness, contributing to the reliability of AI model data.',
+      ],
+    },
+    {
       role: 'FullyHacks Operation Officer',
       company: 'Association for Computer Machinery at CSUF',
       duration: 'Oct 2024 - Present',
