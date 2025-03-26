@@ -1,14 +1,14 @@
 import styles from './AboutStyles.module.css';
-import profile from '../../assets/Profile.png';
-import sun from '../../assets/sun.svg';
-import moon from '../../assets/moon.svg';
-import githubLight from '../../assets/github-light.svg';
-import githubDark from '../../assets/github-dark.svg';
-import linkedinLight from '../../assets/linkedin-light.svg';
-import linkedinDark from '../../assets/linkedin-dark.svg';
-import mailLight from '../../assets/mail-light.svg';
-import mailDark from '../../assets/mail-dark.svg';
-import CV from '../../assets/cv.pdf';
+import profile from '../../assets/About/Profile.png';
+import sun from '../../assets/About/sun.svg';
+import moon from '../../assets/About/moon.svg';
+import githubLight from '../../assets/About/github-light.svg';
+import githubDark from '../../assets/About/github-dark.svg';
+import linkedinLight from '../../assets/About/linkedin-light.svg';
+import linkedinDark from '../../assets/About/linkedin-dark.svg';
+import mailLight from '../../assets/About/mail-light.svg';
+import mailDark from '../../assets/About/mail-dark.svg';
+import CV from '../../assets/About/cv.pdf';
 import { useTheme } from '../../common/ThemeContext';
 
 function About() {
@@ -39,13 +39,13 @@ function About() {
         <h2>CSUF '25</h2>
         <h2>Cloud Security & Data Science Enthusiast</h2>
         <span>
-          <a href='https://github.com/' target='_blank'>
+          <a href='https://github.com/trangn03' target='_blank'>
             <img src={githubIcon} alt='Github icon' />
           </a>
           <a href='https://www.linkedin.com/in/trangn03/' target="_blank">
             <img src={linkedinIcon} alt="Linkedin icon" />
           </a>
-          <a href='https://www.linkedin.com/in/trangn03/' target="_blank">
+          <a href='mailto:xtrang0201@gmail.com' target="_blank">
             <img src={mailIcon} alt="Mail icon" />
           </a>
         </span>

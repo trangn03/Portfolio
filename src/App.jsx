@@ -4,6 +4,7 @@ import About from './sections/About/About'
 import Projects from './sections/Projects/Projects'
 import Experiences from './sections/Experience/Experiences'
 import Footer from './sections/Footer/Footer'
+import Skills from './sections/Skills/Skills'
 
 function App() {
   return (
@@ -11,6 +12,7 @@ function App() {
       <NavBar />
       <About />
       <Experiences />
+      {/* <Skills /> */}
       <Projects />  
       <Footer />
     </>

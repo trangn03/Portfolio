@@ -4,12 +4,21 @@ import styles from './ExperiencesStyles.module.css';
 function Experiences() {
   const experiences = [
     {
+      role: 'Clerk',
+      company: 'OSS - Women in Cybersecurity at CSUF',
+      duration: 'Jan 2025 - Present',
+      details: [
+        'Maintain chapter records, communications, and meeting minutes, ensuring accuracy and transparency.',
+        'Organize and oversee organizational records for efficiency and compliance, including developing and delivering engaging workshops on cybersecurity topics for chapter members.',
+      ],
+    },
+    {
       role: 'Mathematics Data Annotator',
       company: 'Highbrow Techonology Inc',
       duration: 'Nov 2024 - Present',
       details: [
-        'Performed multimodal data annotation for AI training and evaluation, accurately labeling images and text following specific guidelines to enahnce machine learning model accuracy.',
-        'Executed quality assurance by reviewing annotations to ensure consistency and correctness, contributing to the reliability of AI model data.',
+        'Performed multimodal data annotation for Llama model training and evaluation, accurately labeling images and text based on specific guidelines to enhance machine learning model accuracy.',
+        'Conducted quality assurance by reviewing annotations for consistency and correctness, ensuring high-quality training data for AI models.',
       ],
     },
     {
@@ -17,17 +26,17 @@ function Experiences() {
       company: 'Association for Computer Machinery at CSUF',
       duration: 'Oct 2024 - Present',
       details: [
-        'Engaged in pre-event preparations for Fully Hacks, a 24-hour hackathon, by working closely with the team to refine workflows.',
-        'Developed operational strategies and anticipated logistical challenges to ensure the event runs smoothly and efficiently.',
+        'Managed logistics for FullyHacks, a hackathon with 300+ participants, ensuring smooth event operations, including coordinating with sponsors, judges, and volunteers.',
+        'Developed and implemented a comprehensive communication plan for participants and stakeholders, streamlining event workflows and increasing operational efficiency.',
       ],
     },
     {
       role: 'Data Science/AI Research Assistant',
-      company: 'CSUF',
+      company: 'California State University, Fullerton',
       duration: 'May 2023 - May 2024',
       details: [
-        'Analyzed large datasets using Python and Excel to generate insights into food waste trends.',
-        'Developed data pipelines and visualizations to effectively communicate research findings.',
+        'Conducted in-depth research in foundational concepts of Data Science and Machine Learning, exploring key topics such as data preprocessing, algorithm selection, model evaluation, and interpretability.',
+        'Designed and developed the Food Keeper Project, aimed at reducing food waste by building and implementing machine learning models to classify food-related content in social media and email messages.',
       ],
     },
   ];

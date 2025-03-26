@@ -1,8 +1,11 @@
 import styles from './ProjectsStyles.module.css';
-import peerbox from '../../assets/peerbox.png';
-import kozy from '../../assets/kozy.png';
-import food from '../../assets/food.png';
-import reversi from '../../assets/reversi.png';
+import peerbox from '../../assets/Projects/peerbox.png';
+import kozy from '../../assets/Projects/kozy.png';
+import food from '../../assets/Projects/food.png';
+import reversi from '../../assets/Projects/reversi.png';
+import codetech from '../../assets/Projects/codetech.png';
+import movie from '../../assets/Projects/movie.jpg'
+import geminite from '../../assets/Projects/geminite.jpg'
 import ProjectCard from '../../common/ProjectCard';
 
 function Projects() {
@@ -11,10 +14,28 @@ function Projects() {
       <h1 className='sectionTitle'>Projects</h1>
       <div className={styles.projectsContainer}>
         <ProjectCard
+          src={codetech}
+          link='https://csufcodetech.vercel.app/'
+          h3='CodeTech'
+          p='Automated Code Grading'
+        />
+        <ProjectCard
+          src={geminite}
+          link='https://geminite.vercel.app/'
+          h3='Geminite'
+          p="AI-powered chatbot"
+        />
+        <ProjectCard
           src={peerbox}
           link=''
           h3='Peerbox'
           p='Cloud Storage Service'
+        />
+        <ProjectCard
+          src={movie}
+          link='https://moviesdiscovery.vercel.app/'
+          h3='Movie Discovery'
+          p='Find movie you enjoy'
         />
         <ProjectCard
           src={kozy}
