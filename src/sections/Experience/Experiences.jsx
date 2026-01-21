@@ -4,9 +4,19 @@ import styles from './ExperiencesStyles.module.css';
 function Experiences() {
   const experiences = [
     {
+      role: 'Data Quality',
+      company: 'Bel-Air Machining Co',
+      duration: 'May 2025 - Present',
+      details: [
+        'Accurately enter and maintain dimensional data from CMM reports into ERP systems, interpreting GD&T callouts to ensure full compliance with AS9100 aerospace standards.',
+        'Prepare organized data packages and assist with source inspection documentation to support quality and production teams.',
+        'Analyze inspection results using Microsoft Excel, identifying discrepancies and maintaining traceability throughout the product lifecycle.',
+      ],
+    },
+    {
       role: 'Clerk',
       company: 'OSS - Women in Cybersecurity at CSUF',
-      duration: 'Jan 2025 - Present',
+      duration: 'Jan 2025 - May 2025',
       details: [
         'Maintain chapter records, communications, and meeting minutes, ensuring accuracy and transparency.',
         'Organize and oversee organizational records for efficiency and compliance, including developing and delivering engaging workshops on cybersecurity topics for chapter members.',
@@ -15,7 +25,7 @@ function Experiences() {
     {
       role: 'Mathematics Data Annotator',
       company: 'Highbrow Techonology Inc',
-      duration: 'Nov 2024 - Present',
+      duration: 'Nov 2024 -  May 2025',
       details: [
         'Performed multimodal data annotation for Llama model training and evaluation, accurately labeling images and text based on specific guidelines to enhance machine learning model accuracy.',
         'Conducted quality assurance by reviewing annotations for consistency and correctness, ensuring high-quality training data for AI models.',
@@ -24,7 +34,7 @@ function Experiences() {
     {
       role: 'FullyHacks Operation Officer',
       company: 'Association for Computer Machinery at CSUF',
-      duration: 'Oct 2024 - Present',
+      duration: 'Oct 2024 -  March 2025',
       details: [
         'Managed logistics for FullyHacks, a hackathon with 300+ participants, ensuring smooth event operations, including coordinating with sponsors, judges, and volunteers.',
         'Developed and implemented a comprehensive communication plan for participants and stakeholders, streamlining event workflows and increasing operational efficiency.',
