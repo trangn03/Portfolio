@@ -37,7 +37,7 @@ function About() {
       <div className={styles.info}>
         <h1>Trang Ngo</h1>
         <h2>CSUF '25</h2>
-        <h2>Cloud Security & Data Science Enthusiast</h2>
+        {/* <h2>Cloud Security & Data Science Enthusiast</h2> */}
         <span>
           <a href='https://github.com/trangn03' target='_blank'>
             <img src={githubIcon} alt='Github icon' />
