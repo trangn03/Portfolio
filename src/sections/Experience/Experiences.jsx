@@ -4,14 +4,15 @@ import styles from './ExperiencesStyles.module.css';
 function Experiences() {
   const experiences = [
     {
-      role: 'Data Quality Specialist',
+      role: 'Quality Data Specialist',
       company: 'Bel-Air Machining Co',
       duration: 'May 2025 - Present',
       details: [
         'Perform and review First Article Inspection Reports (FAIR) per AS9102 standards, ballooning engineering drawings and processing dimensional CMM data into ERP systems while interpreting GD&T callouts to ensure full AS9100 compliance.',
         'Support source inspection by preparing organized data packages and developing detailed inspection reports that reflect correct drawing and purchase order revision levels to prevent nonconformance.',
-        'Facilitate clear communication between quality and production teams to ensure all documentation is delivered on schedule, supporting seamless operational workflows.',
-        'Analyze inspection results using Microsoft Excel, identifying discrepancies and maintaining traceability throughout the product lifecycle.', 
+        'Leveraged JobBoss ERP system to monitor real-time job status and verify material readiness, audited outside service POs against routing stages to ensure process accuracy and support production scheduling.',
+        'Analyze inspection results using Microsoft Excel, identifying discrepancies and maintaining traceability throughout the product lifecycle.',
+        'Facilitate clear communication between quality and production teams to ensure all documentation is delivered on schedule, supporting seamless operational workflows.', 
       ],
     },
     {
