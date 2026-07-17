@@ -6,7 +6,7 @@ function NavBar() {
         <section id='navbar' className={styles.container}>
             <ul className={styles.navbarLinks}>
                 <li>
-                    <a href='#Hero' className={styles.navItem}>About</a>
+                    <a href='#About' className={styles.navItem}>About</a>
                 </li>
                 <li>
                     <a href='#Experiences' className={styles.navItem}>Experiences</a>

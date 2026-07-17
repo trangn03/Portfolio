@@ -39,20 +39,20 @@ function About() {
         <h2>CSUF '25</h2>
         {/* <h2>Cloud Security & Data Science Enthusiast</h2> */}
         <span>
-          <a href='https://github.com/trangn03' target='_blank'>
+          <a href='https://github.com/trangn03' target='_blank' rel='noopener noreferrer'>
             <img src={githubIcon} alt='Github icon' />
           </a>
-          <a href='https://www.linkedin.com/in/trangn03/' target="_blank">
+          <a href='https://www.linkedin.com/in/trangn03/' target="_blank" rel='noopener noreferrer'>
             <img src={linkedinIcon} alt="Linkedin icon" />
           </a>
-          <a href='mailto:xtrang0201@gmail.com' target="_blank">
+          <a href='mailto:xtrang0201@gmail.com'>
             <img src={mailIcon} alt="Mail icon" />
           </a>
         </span>
         {/* <p className={styles.description}>
           Description here
         </p> */}
-        <a href={CV} target='_blank'>
+        <a href={CV} target='_blank' rel='noopener noreferrer'>
           <button className='hover'>Resume</button>
         </a>
       </div>

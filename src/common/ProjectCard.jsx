@@ -1,13 +1,22 @@
 import React from 'react';
 
-function ProjectCard({ src, link, h3, p, tools }) {
-  return (
-    <a href={link} target="_blank">
-      <img className="hover" src={src} alt={`${h3} logo`} />
+function ProjectCard({ src, link, h3, p }) {
+  const content = (
+    <>
+      <img className={link ? 'hover' : ''} src={src} alt={`${h3} logo`} />
       <h3>{h3}</h3>
       <p>{p}</p>
-      
-    </a> 
+    </>
+  );
+
+  if (!link) {
+    return <div>{content}</div>;
+  }
+
+  return (
+    <a href={link} target="_blank" rel="noopener noreferrer">
+      {content}
+    </a>
   );
 }
 
