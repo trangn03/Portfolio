@@ -28,6 +28,10 @@
   max-width: 50px;
 }
 
+.skillCard p {
+  color: #222;
+}
+
 @media (width >= 800px) {
   .skillCard {
     width: 120px;
