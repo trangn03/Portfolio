@@ -12,6 +12,9 @@ function NavBar() {
                     <a href='#Experiences' className={styles.navItem}>Experiences</a>
                 </li>
                 <li>
+                    <a href='#Skills' className={styles.navItem}>Skills</a>
+                </li>
+                <li>
                     <a href='#Projects' className={styles.navItem}>Projects</a>
                 </li>
             </ul>

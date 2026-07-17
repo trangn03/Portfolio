@@ -1,0 +1,35 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.skillsContainer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  max-width: 900px;
+}
+
+.skillCard {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  width: 100px;
+  padding: 20px;
+  background-color: var(--project-card-bg);
+  border-radius: 20px;
+}
+
+.skillCard img {
+  max-width: 50px;
+}
+
+@media (width >= 800px) {
+  .skillCard {
+    width: 120px;
+  }
+}
