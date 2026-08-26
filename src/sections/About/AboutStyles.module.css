@@ -2,99 +2,148 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    gap: 20px;
+    align-items: center;
+    gap: 30px;
     text-align: center;
-    height: 20dvh;
-    min-height: 320px;
-
-    .hero {
-        max-width: 150px;
-    }
-
-    span {
-        display: flex;
-        gap: 25px;
-        justify-content: center;
-
-        a {
-            margin: 0;
-
-            img {
-                width: 35px;;
-            }
-        }
-    }
-
-    a {
-        width: fit-content;
-        align-self: center;
-    }
-
-    button {
-        background-color: var(--btn-color);
-        color: var(--btn-text-color);
-        border: none;
-        border-radius: 20px;
-        width: 125px;
-        height: 50px;
-        font-size: 20px;
-        font-weight: bold;
-        box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
-        transition: box-shadow 200ms ease-in-out, transform 200ms ease-in-out;
-    }
-
-    button:hover{
-        transform: scale(1.05);
-    }
-
-    button:active{
-        transform: translateY(2px);
-        box-shadow: 0 2px 2px rgba(0, 0, 0, 0.25);
-    }
+    padding: 40px 0;
+    min-height: calc(100vh - 200px);
 }
 
 .colorModeContainer {
     position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-.colorMode {
-    position: absolute;
-    right: 0;
-    width: 25px;
+.imageWrapper {
+    position: relative;
+    border-radius: 50%;
+    background: var(--accent-gradient);
+    padding: 6px;
+    box-shadow: 0 0 40px rgba(96, 165, 250, 0.4);
+    animation: float 6s ease-in-out infinite;
 }
 
-.colorMode:hover {
-    cursor: pointer;
+.hero {
+    max-width: 200px;
+    width: 100%;
+    border-radius: 50%;
+    display: block;
+    background: var(--bg-primary);
+    position: relative;
+    z-index: 2;
 }
 
-.description {
-    max-width: 24px;
+@keyframes float {
+    0% { transform: translateY(0px); }
+    50% { transform: translateY(-15px); }
+    100% { transform: translateY(0px); }
 }
 
 .info {
     display: flex;
     flex-direction: column;
-    gap: 20px;
+    gap: 16px;
+    align-items: center;
 }
 
-@media (width >= 800px) {
+.info h2 {
+    font-size: 1.5rem;
+    font-weight: 500;
+    color: var(--text-secondary);
+}
+
+.socials {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+.socialLink {
+    display: inline-block;
+    transition: transform var(--transition-speed) ease;
+}
+
+.socialLink img {
+    width: 32px;
+    transition: filter var(--transition-speed) ease;
+}
+
+.socialLink:hover {
+    transform: translateY(-4px) scale(1.1);
+}
+
+.resumeBtn {
+    background: var(--accent-gradient);
+    color: var(--btn-text-color);
+    border: none;
+    border-radius: 30px;
+    padding: 14px 32px;
+    font-size: 1.125rem;
+    font-weight: 600;
+    cursor: pointer;
+    box-shadow: 0 10px 20px rgba(59, 130, 246, 0.3);
+    transition: all var(--transition-speed) ease;
+    font-family: 'Inter', sans-serif;
+    position: relative;
+    overflow: hidden;
+}
+
+.resumeBtn::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(rgba(255, 255, 255, 0.2), transparent);
+    opacity: 0;
+    transition: opacity var(--transition-speed) ease;
+}
+
+.resumeBtn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 15px 25px rgba(59, 130, 246, 0.4);
+}
+
+.resumeBtn:hover::before {
+    opacity: 1;
+}
+
+.resumeBtn:active {
+    transform: translateY(1px);
+    box-shadow: 0 5px 10px rgba(59, 130, 246, 0.3);
+}
+
+@media (min-width: 800px) {
     .container {
-      flex-direction: row-reverse;
-      align-items: center;
-      justify-content: space-evenly;
-  
-      .hero {
-        max-width: 350px;
-        width: 350px;
-      }
+        flex-direction: row-reverse;
+        justify-content: center;
+        gap: 80px;
+        text-align: left;
+    }
+    
+    .info {
+        align-items: flex-start;
+    }
+    
+    .socials {
+        justify-content: flex-start;
+    }
+    
+    .hero {
+        max-width: 280px;
     }
 }
 
-@media (width >= 1400px) {
+@media (min-width: 1400px) {
+    .hero {
+        max-width: 350px;
+    }
     .container {
-      .hero {
-        max-width: 400px;
-        width: 400px;
-      }
+        gap: 120px;
     }
 }

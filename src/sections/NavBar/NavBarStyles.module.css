@@ -1,15 +1,21 @@
 .container {
-    background-color: #4d4949;
-    padding: 1rem 2rem;
+    background: var(--card-bg);
+    backdrop-filter: blur(16px);
+    -webkit-backdrop-filter: blur(16px);
+    border: 1px solid var(--card-border);
+    padding: 0.75rem 2rem;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    top: 0;
-    border-radius: 12px;
+    position: sticky;
+    top: 20px;
+    border-radius: 50px;
     width: fit-content;
-    z-index: 10;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    z-index: 100;
+    box-shadow: var(--card-shadow);
     margin: 1rem auto;
+    transition: all var(--transition-speed) ease;
+    gap: 2rem;
 }
 
 .navbarLinks {
@@ -18,18 +24,77 @@
     gap: 2rem;
     margin: 0;
     padding: 0;
+    align-items: center;
 }
 
 .navItem {
     text-decoration: none;
-    color: #fff;
-    font-size: 20px;
+    color: var(--text-primary);
+    font-size: 16px;
     font-weight: 500;
-    letter-spacing: 0.5px;
-    transition: color 0.3s ease;
+    transition: color var(--transition-speed) ease;
+    position: relative;
+}
+
+.navItem::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: -4px;
+    left: 0;
+    background: var(--accent-gradient);
+    transition: width var(--transition-speed) ease;
+    border-radius: 2px;
 }
 
 .navItem:hover {
-    color: #578beb;
-    transform: scale(1.1);
+    color: var(--accent-primary);
+}
+
+.navItem:hover::after {
+    width: 100%;
+}
+
+.themeToggle {
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 8px;
+    border-radius: 50%;
+    transition: background-color var(--transition-speed) ease;
+}
+
+.themeToggle:hover {
+    background-color: rgba(150, 150, 150, 0.1);
+}
+
+.themeIcon {
+    width: 24px;
+    height: 24px;
+    filter: drop-shadow(0 2px 4px rgba(0,0,0,0.1));
+    transition: transform var(--transition-speed) ease;
+}
+
+.themeToggle:hover .themeIcon {
+    transform: rotate(15deg) scale(1.1);
+}
+
+@media (max-width: 800px) {
+    .container {
+        padding: 0.75rem 1.5rem;
+        border-radius: 16px;
+        gap: 1rem;
+    }
+    
+    .navbarLinks {
+        gap: 1rem;
+    }
+    
+    .navItem {
+        font-size: 14px;
+    }
 }

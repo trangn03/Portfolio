@@ -1,39 +1,77 @@
 .container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 60px 0;
 }
 
 .skillsContainer {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 20px;
-  max-width: 900px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    max-width: 900px;
+    padding: 20px 0;
 }
 
 .skillCard {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 10px;
-  width: 100px;
-  padding: 20px;
-  background-color: var(--project-card-bg);
-  border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    width: 110px;
+    height: 110px;
+    padding: 16px;
+    background: var(--card-bg);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border: 1px solid var(--card-border);
+    border-radius: 20px;
+    box-shadow: var(--card-shadow);
+    transition: all var(--transition-speed) ease;
+    cursor: default;
+}
+
+.skillCard:hover {
+    transform: translateY(-8px);
+    background: rgba(100, 100, 100, 0.1);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
 }
 
 .skillCard img {
-  max-width: 50px;
+    max-width: 45px;
+    height: 45px;
+    object-fit: contain;
+    transition: transform var(--transition-speed) ease;
+}
+
+.skillCard:hover img {
+    transform: scale(1.1);
 }
 
 .skillCard p {
-  color: #222;
+    color: var(--text-primary);
+    font-size: 0.9rem;
+    font-weight: 600;
+    margin: 0;
 }
 
-@media (width >= 800px) {
-  .skillCard {
-    width: 120px;
-  }
+@media (min-width: 800px) {
+    .skillsContainer {
+        gap: 30px;
+    }
+    .skillCard {
+        width: 130px;
+        height: 130px;
+        gap: 16px;
+    }
+    .skillCard img {
+        max-width: 55px;
+        height: 55px;
+    }
+    .skillCard p {
+        font-size: 1rem;
+    }
 }
